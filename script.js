@@ -1,5 +1,5 @@
 //your JS code here. If required.
-document.getElementById("submit").addEventListener("click", function (e) {
+document.getElementById("form-group").addEventListener("submit", function (e) {
     e.preventDefault();
 
     const title = document.getElementById("title").value.trim();
