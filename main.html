@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CRUD</title>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container">
+        <h1><span class="blue">My</span>BookList</h1>
 
+        <div class="form-group">
+            <input type="text" id="title" placeholder="Title" />
+            <input type="text" id="author" placeholder="Author" />
+            <input type="text" id="isbn" placeholder="ISBN#" />
+            <button id="submit">Add Book</button>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="sricpt.js"></script>
 </body>
 
 </html>
